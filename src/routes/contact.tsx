@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { PageHeader } from "@/components/SiteLayout";
 import { useState, type FormEvent } from "react";
 import { Mail, Phone, MapPin, CheckCircle2 } from "lucide-react";
+import entranceImg from "@/assets/campus-entrance.jpg";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
@@ -36,7 +37,7 @@ function Contact() {
 
   return (
     <>
-      <PageHeader title="Contact Us" subtitle="We'd love to hear from prospective students, parents, alumni, and collaborators." />
+      <PageHeader title="Contact Us" subtitle="We'd love to hear from prospective students, parents, alumni, and collaborators." bgImage={entranceImg} />
       <section className="mx-auto max-w-7xl px-4 py-16 lg:px-8 grid gap-10 lg:grid-cols-2">
         <div>
           <h2 className="font-serif text-2xl font-semibold">Reach Us</h2>

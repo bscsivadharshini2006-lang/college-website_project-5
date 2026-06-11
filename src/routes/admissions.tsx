@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { PageHeader } from "@/components/SiteLayout";
 import { CheckCircle2 } from "lucide-react";
+import entranceImg from "@/assets/campus-entrance.jpg";
 
 export const Route = createFileRoute("/admissions")({
   head: () => ({
@@ -27,6 +28,7 @@ function Admissions() {
       <PageHeader
         title="Admissions 2026–27"
         subtitle="Join a community committed to scholarship, character, and service. Applications are accepted online and at the College Office."
+        bgImage={entranceImg}
       />
 
       <section className="mx-auto max-w-7xl px-4 py-16 lg:px-8 grid gap-12 lg:grid-cols-2">
