@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { PageHeader } from "@/components/SiteLayout";
 import { useState } from "react";
 import { Search } from "lucide-react";
+import entranceImg from "@/assets/campus-entrance.jpg";
 
 export const Route = createFileRoute("/faculty")({
   head: () => ({
@@ -35,7 +36,7 @@ function Faculty() {
   );
   return (
     <>
-      <PageHeader title="Faculty & Staff" subtitle="A community of scholars and teachers dedicated to the success of every student." />
+      <PageHeader title="Faculty & Staff" subtitle="A community of scholars and teachers dedicated to the success of every student." bgImage={entranceImg} />
       <section className="mx-auto max-w-7xl px-4 py-16 lg:px-8">
         <div className="relative max-w-md">
           <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />

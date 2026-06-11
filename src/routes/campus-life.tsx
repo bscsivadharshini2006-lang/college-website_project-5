@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { PageHeader } from "@/components/SiteLayout";
 import { Library, Trophy, Music, Home, Utensils, Wifi } from "lucide-react";
+import groundsImg from "@/assets/campus-grounds.jpg";
 
 export const Route = createFileRoute("/campus-life")({
   head: () => ({
@@ -27,6 +28,7 @@ function CampusLife() {
       <PageHeader
         title="Campus Life"
         subtitle="A residential campus where classrooms, temples, playing fields, and libraries shape rounded young scholars."
+        bgImage={groundsImg}
       />
       <section className="mx-auto max-w-7xl px-4 py-16 lg:px-8">
         <h2 className="font-serif text-3xl font-semibold">Facilities</h2>

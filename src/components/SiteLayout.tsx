@@ -108,7 +108,7 @@ export function SiteFooter() {
         </div>
       </div>
       <div className="border-t border-primary-foreground/10 py-4 text-center text-xs text-primary-foreground/70">
-        © {new Date().getFullYear()} Dharmapuram Adhinam Arts College. All rights reserved.
+        &copy; 2026 Dharmapuram Adhinam Arts College. All rights reserved.
       </div>
     </footer>
   );
@@ -126,10 +126,21 @@ export function SiteLayout() {
   );
 }
 
-export function PageHeader({ title, subtitle }: { title: string; subtitle?: string }) {
+export function PageHeader({ title, subtitle, bgImage }: { title: string; subtitle?: string; bgImage?: string }) {
   return (
-    <section className="bg-hero-gradient text-primary-foreground">
-      <div className="mx-auto max-w-7xl px-4 py-16 lg:px-8 lg:py-24">
+    <section className="relative isolate overflow-hidden text-primary-foreground">
+      {bgImage && (
+        <img
+          src={bgImage}
+          alt=""
+          width={1920}
+          height={640}
+          className="absolute inset-0 -z-20 h-full w-full object-cover"
+          loading="lazy"
+        />
+      )}
+      <div className="absolute inset-0 -z-10 bg-hero-gradient" />
+      <div className="relative mx-auto max-w-7xl px-4 py-16 lg:px-8 lg:py-24">
         <h1 className="font-serif text-4xl font-semibold sm:text-5xl">{title}</h1>
         {subtitle && <p className="mt-4 max-w-2xl text-lg text-primary-foreground/85">{subtitle}</p>}
       </div>
