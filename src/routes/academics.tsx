@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { PageHeader } from "@/components/SiteLayout";
+import libraryImg from "@/assets/campus-library.jpg";
 
 export const Route = createFileRoute("/academics")({
   head: () => ({
@@ -29,6 +30,7 @@ function Academics() {
       <PageHeader
         title="Academics"
         subtitle="A broad curriculum across the arts, commerce, and sciences — taught by faculty committed to scholarship and student success."
+        bgImage={libraryImg}
       />
       <section className="mx-auto max-w-7xl px-4 py-16 lg:px-8">
         <h2 className="font-serif text-3xl font-semibold">Departments & Programmes</h2>

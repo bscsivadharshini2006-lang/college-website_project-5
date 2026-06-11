@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { PageHeader } from "@/components/SiteLayout";
 import { Target, Eye, Heart } from "lucide-react";
+import heritageImg from "@/assets/campus-heritage.jpg";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -18,6 +19,7 @@ function About() {
       <PageHeader
         title="About the College"
         subtitle="Founded in 1967 under the spiritual guidance of the Dharmapuram Adhinam, our institution carries forward a centuries-old tradition of Tamil learning."
+        bgImage={heritageImg}
       />
       <section className="mx-auto max-w-4xl px-4 py-16 lg:px-8 prose prose-lg">
         <h2 className="font-serif text-3xl font-semibold">Our History</h2>

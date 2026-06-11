@@ -108,7 +108,7 @@ export function SiteFooter() {
         </div>
       </div>
       <div className="border-t border-primary-foreground/10 py-4 text-center text-xs text-primary-foreground/70">
-        © {new Date().getFullYear()} Dharmapuram Adhinam Arts College. All rights reserved.
+        &copy; 2026 Dharmapuram Adhinam Arts College. All rights reserved.
       </div>
     </footer>
   );
